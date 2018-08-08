@@ -4,9 +4,9 @@ This is a command line implementation of the [The Playlist Miner from plamere](h
 The playlist is created by counting the amount of appearances of songs in other playlists and then selecting the most counted songs. These other playlists are searched using specified keywords in the description of you playlist
 
 # Requirements
-Same requirements than [The Playlist Miner from plamere](https://github.com/plamere/playlistminer).
+Spotipy is required. Follow the [repositories](https://github.com/plamere/spotipy) steps for installation and setup.
 I'm using Python 2.7.10 haven't tried on Python 3.
-Spotipy MUST be installed.
+
 
 # Usage
 ## My Personal Implementation
@@ -26,13 +26,13 @@ So my "magic number" represents how important Spotify's popularity rate is to yo
 Now if we want a Pop playlist, we would use values above 0.5 so as to assure that the songs are currently popular.
 
 ## This steps must be done
-Everything is explained in detail on [The Playlist Miner from plamere](https://github.com/plamere/playlistminer), this is a simple explanation.
+Everything is explained in detail on [Spotipy](https://github.com/plamere/spotipy), this is a simple explanation.
 
 Playlist id can be found in the Spotify app by clicking on Share->Spotify Uri.
 
-A login and must be done so as to generate the permission token which will be saved locale in your machine as `.cache-username-...`.
+Run the program and your internet explorer will open requuesting a login which must be done so as to generate the permission token which will be saved locally in your machine as `.cache-username-...` for future api connections.
 
-You must first must edit `playlist_creator.py` and add your `client_id`, `client_secret` and `redirect_url`.
+You must first must edit `playlist_creator.py` and add your `client_id`, `client_secret` and `redirect_url` which are generated in online on the Spotify Developer page. Again, all this is explained on the [Spotipy](https://github.com/plamere/spotipy) page. 
 
 ## Run
 `python playlist_creator.py username playlist:pid`
