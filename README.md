@@ -2,7 +2,9 @@
 
 This is a command line implementation of the [The Playlist Miner from plamere](https://github.com/plamere/playlistminer).
 
-The playlist is created by counting the amount of appearances of songs in other playlists and then selecting the most counted songs. These other playlists are searched using specified keywords in the description of you playlist
+The playlist is created by counting the amount of appearances of songs in other playlists and then selecting the most counted songs. These other playlists are searched using specified keywords in the description of you playlist.
+
+[One of my favorite Automatic playlists in my Spotify profile](https://open.spotify.com/user/11134160748/playlist/1P2ffH09QHAwVFgssQhVg8?si=VXfYC7rYTl-mPMKdH56RTg)
 
 # Requirements
 
